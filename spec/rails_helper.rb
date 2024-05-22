@@ -2,12 +2,6 @@
 require 'spec_helper'
 require 'simplecov'
 SimpleCov.start 'rails'
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-    with.library :rails
-  end
-end
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
